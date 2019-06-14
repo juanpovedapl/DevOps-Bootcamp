@@ -65,3 +65,37 @@ Pro-tip: If you don't feel confident using git in the terminal, you can check an
 ### Cluster creation
 
 ### Installing IBM Cloud Private CLI
+
+1. Login to https://bldbzt1160.bld.dst.ibm.com:8443/
+
+2. Go to the left-menu and select "Command Line Tools" and then "Cloud Private CLI"
+
+3. Open the menu "Install IBM Cloud Private CLI" and select your OS, copy the download command.
+
+![InstallationCommand](/resources/img/getInstallationCommand-ICPCLI.gif)
+
+4. Open a terminal and run the command
+
+5. Once downloaded, change the permissions of the file:
+
+```.term1
+chmod 755 <file>
+```
+
+And then move it:
+
+```.term1
+sudo mv <file> /usr/local/bin/cloudctl
+```
+
+6. Confirm that the IBM Cloud Private CLI is installed:
+
+```.term1
+cloudctl --help
+```
+
+7. To login to ICP cluster, run the following:
+
+```.term1
+cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
+```
