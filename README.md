@@ -49,7 +49,7 @@ If you don't see any key, follow the instructions in [here](https://help.github.
 1. Click on "Clone or download"
 2. Ensure to clone with SSH and copy the text provided.
 
-![Clone repo](/resources/img/Clone repo.gif)
+![Clone repo](/resources/img/Clone_repo.gif)
 
 3. Open a terminal and move to a folder where you want to store the repository, and enter the following:
 
