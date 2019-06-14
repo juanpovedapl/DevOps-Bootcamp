@@ -5,8 +5,8 @@
 ## Contents
 - [Pre-requisites](#Pre-requisites)
   * [Github](#Github)
-  * [TaaS Artifactory](#TaaS Artifactory)
-  * [Cluster Creation](#Cluster creation)
+  * [TaaS Artifactory](#Validate TaaS Artifactory access)
+  * [Cluster Creation](#Validate TaaS Jenkins access)
   * [Configuring IBM Cloud Private CLI](#Configuring IBM Cloud Private CLI)
 - Hands-On: BDD
 - Hands-On: DSAT
@@ -63,4 +63,5 @@ Pro-tip: If you don't feel confident using git in the terminal, you can check an
 ### Validate TaaS Artifactory access
 ### Validate TaaS Jenkins access
 ### Cluster creation
-### Configuring IBM Cloud Private CLI
+
+### Installing IBM Cloud Private CLI
