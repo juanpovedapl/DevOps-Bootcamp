@@ -5,14 +5,14 @@
 ## Contents
 - [Pre-requisites](#Pre-requisites)
   * [Github](#Github)
-  * [TaaS Artifactory](#Validate TaaS Artifactory access)
-  * [Cluster Creation](#Validate TaaS Jenkins access)
-  * [Configuring IBM Cloud Private CLI](#Configuring IBM Cloud Private CLI)
+  * [TaaS Artifactory](#Validate-TaaS-Artifactory-access)
+  * [Cluster Creation](#Validate-TaaS-Jenkins-access)
+  * [Configuring IBM Cloud Private CLI](#Configuring-IBM-Cloud-Private-CLI)
 - Hands-On: BDD
 - Hands-On: DSAT
 - Hands-On: CloudFoundry Weather Application
 
-## Pre-requisites
+## Pre requisites
 
 ### Github
 
