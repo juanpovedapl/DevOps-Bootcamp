@@ -15,6 +15,7 @@
 ## Pre-requisites
 
 ### Github
-### TaaS Artifactory
+### Validate TaaS Artifactory access
+### Validate TaaS Jenkins access
 ### Cluster creation
 ### Configuring IBM Cloud Private CLI
