@@ -6,8 +6,10 @@
 - [Pre-requisites](#Pre-requisites)
   * [Github](#Github)
   * [TaaS Artifactory](#Validate-TaaS-Artifactory-access)
-  * [Cluster Creation](#Validate-TaaS-Jenkins-access)
+  * [TaaS Jenkins](#Validate-TaaS-Jenkins-access)
+  * [Cluster Creation](#Cluster-creation)
   * [Configuring IBM Cloud Private CLI](#Configuring-IBM-Cloud-Private-CLI)
+  * [Create an IBM Cloud API key](#Create-an-IBM-Cloud-APIKEY)
 - Hands-On: BDD
 - Hands-On: DSAT
 - Hands-On: CloudFoundry Weather Application
@@ -113,3 +115,14 @@ cloudctl --help
 ```.term1
 cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 ```
+
+### Create an IBM Cloud APIKEY
+As an IBM Cloud user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key can be that a user or organization can create several API Keys for different programs and the API keys can be deleted independently if compromised without interfering with other API keys or even the user.
+To create an API key for your user identity in the UI, complete the following steps:
+1. Go to **Manage > Access(IAM) > IBM Cloud API Keys.**
+2. Click **Create an IBM Cloud API key.**
+3. Enter a name and description for your API key.
+4. Click **Create.**
+5. Then, click **Show** to display the API key. Or, click **Copy** to copy and save it for later, or click **Download.**
+
+![](resources/img/apikey.gif)
