@@ -129,7 +129,7 @@ To create an API key for your user identity in the UI, complete the following st
 
 ![](resources/img/apikey.gif)
 
-#Installing Docker
+### Installing Docker
 
 1. Install required packages
 ´sudo yum install -y yum-utils \
@@ -146,7 +146,7 @@ To create an API key for your user identity in the UI, complete the following st
 
 [link](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-#Installing IBM Cloud tools
+### Installing IBM Cloud tools
 
 1. Run the following command:
 ´curl -sL http://ibm.biz/idt-installer | bash´
