@@ -132,36 +132,36 @@ To create an API key for your user identity in the UI, complete the following st
 ### Installing Docker
 
 1. Install required packages
-´´´
+```
 sudo yum install -y yum-utils \
 device-mapper-persistent-data \
 lvm2
-´´´
+```
 
 2. Add **stable** repository
-´´´
+```
 sudo yum-config-manager \
 --add-repo \
 https://download.docker.com/linux/centos/docker-ce.repo
-´´´
+```
 
 3. Install Docker
-´´´
+```
 sudo yum install docker-ce docker-ce-cli containerd.io
-´´´
+```
 
 [link](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 ### Installing IBM Cloud tools
 
 1. Run the following command:
-´´´
+```
 curl -sL http://ibm.biz/idt-installer | bash
-´´´
+```
 
 2. Verify the installation
-´´´
+```
 ibmcloud dev help
-´´´
+```
 
 [link])(https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
