@@ -12,6 +12,7 @@
   * [6. IBM Cloud Kubernetes Cluster creation](#6.-IBM-Cloud-Kubernetes-Cluster-creation)
   * [7. Create an IBM Cloud APIKEY](#7.-Installing-IBM-Cloud-Private-CLI)
   * [8. Installing IBM Cloud Private CLI](#8.-Installing-IBM-Cloud-Private-CLI)
+  * [9. Connecting to IBM Cloud KS cluster](#9.-Connecting-to-IBM-Cloud-KS-cluster)
 
 
 - Hands-On: BDD
@@ -26,6 +27,13 @@
 ```
 curl -sL http://ibm.biz/idt-installer | bash
 ```
+2. Verify the installation
+```
+ibmcloud dev help
+```
+
+[link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+
 
 ### 2. Installing Docker
 
@@ -53,12 +61,6 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 [link](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 
-2. Verify the installation
-```
-ibmcloud dev help
-```
-
-[link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
 ### 3. Github
@@ -99,9 +101,14 @@ Pro-tip: If you don't feel confident using git in the terminal, you can check an
 
 
 ### 4. Validate TaaS Artifactory access
-Artifactory is a universal Artifact Repository Manager, intergrating with CI/CD and DevOps tools to track your artifacts through the development process. As well as offering generic artifact storage, Artifactory offers bespoke and tool-integrated support for the most popular packages including Maven, Docker, NPM, Helm, PyPI, Gradle, Ivy, Debian and RPM.
-TaaS offers Artifactory Enterprise in two high availability clusters, NA (Dallas) and EU (London). When onboarding to Artifactory, teams should select their primary cluster closest to their build infrastructure - the repository contents will be automatically replicated to the other cluster. This replica is provided for disaster recovery, and as an alternative (read only) download location.
-We will use this repository to store all images created during BDD exercise. Validate your access to Docker Repository [gbs-appops-training-docker-local.artifactory.swg-devops.com](https://na.artifactory.swg-devops.com/artifactory/webapp/#/artifacts/browse/tree/General/gbs-appops-training-docker-local).
+Artifactory is a universal Artifact Repository Manager, intergrating with CI/CD and DevOps tools to track your artifacts through the development process. As well as offering generic artifact storage, Artifactory offers bespoke and tool-integrated support for the most popular packages including Maven, Docker, NPM, Helm, PyPI, Gradle, Ivy, Debian and RPM.  
+TaaS offers Artifactory Enterprise in two high availability clusters, NA (Dallas) and EU (London). When onboarding to Artifactory, teams should select their primary cluster closest to their build infrastructure - the repository contents will be automatically replicated to the other cluster. This replica is provided for disaster recovery, and as an alternative (read only) download location.  
+We will use this repository to store all images created during BDD and DSAT exercise.
+Validate your access to Docker Repository. Execute the following commmand and enter with your w3 credentials: 
+```
+docker login gbs-appops-training-docker-local.artifactory.swg-devops.com
+```
+You should obtain **Login Succeeded**.
 
 ### 5. Validate TaaS Jenkins access
 Jenkins is a continuous integration and continuous delivery application. By continuously building and testing software projects with Jenkins, it becomes easier for developers to integrate changes in a project and to find and solve defects more rapidly, thereby increasing your productivity.
@@ -163,3 +170,23 @@ cloudctl --help
 ```.term1
 cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 ```
+
+### 9. Connecting to IBM Cloud KS cluster
+
+1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
+```
+ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g default
+```
+2. Download the kubeconfig files for your cluster.
+```
+ibmcloud ks cluster-config --cluster <YOUR_CLUSTER>
+```
+3. Using the output from the previous step, set the KUBECONFIG environment variable. For example:
+```
+export KUBECONFIG=/home/$USER/.bluemix/plugins/container-service/clusters/mycluster/kube-config-hou02-mycluster.yml
+```
+4. Verify kubectl can communicate with your cluster.
+```
+kubectl cluster-info
+```
+
