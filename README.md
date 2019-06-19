@@ -164,4 +164,4 @@ curl -sL http://ibm.biz/idt-installer | bash
 ibmcloud dev help
 ```
 
-[link])(https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+[link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
