@@ -4,8 +4,8 @@
 
 ## Contents
 - [Pre-requisites](#Pre-requisites)
-  * [1. Installing IBM Cloud Tools](#1. Installing-IBM-Cloud-Tools)
-  * [2. Installing Docker](#2. Installing-docker:only-if-working-with-RHEL)
+  * [1. Installing IBM Cloud Tools](#1.-Installing-IBM-Cloud-Tools)
+  * [2. Installing Docker](#2.-Installing-docker:only-if-working-with-RHEL)
   * [3. Github](#3. Github)
   * [4. TaaS Artifactory](#4.-Validate-TaaS-Artifactory-access)
   * [5. TaaS Jenkins](#5.-Validate-TaaS-Jenkins-access)
