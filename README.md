@@ -10,7 +10,7 @@
   * [4. TaaS Artifactory](#4-Validate-TaaS-Artifactory-access)
   * [5. TaaS Jenkins](#5-Validate-TaaS-Jenkins-access)
   * [6. IBM Cloud Kubernetes Cluster creation](#6-IBM-Cloud-Kubernetes-Cluster-creation)
-  * [7. Create an IBM Cloud APIKEY](#7-Installing-IBM-Cloud-Private-CLI)
+  * [7. Create an IBM Cloud APIKEY](#7-Create-an-IBM-Cloud-APIKEY)
   * [8. Installing IBM Cloud Private CLI](#8-Installing-IBM-Cloud-Private-CLI)
   * [9. Connecting to IBM Cloud KS cluster](#9-Connecting-to-IBM-Cloud-KS-cluster)
 
