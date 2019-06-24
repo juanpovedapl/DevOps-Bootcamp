@@ -65,8 +65,25 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 
 [link](https://docs.docker.com/install/linux/docker-ce/centos/)
 
+### 3. Installing Docker Compose
 
+For RHEL workstations, follow the next steps:
 
+1. Run this command to download the current stable release of Docker Compose:
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+2. Apply executable permissions to the binary:
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+3. Test the installation:
+```
+docker-compose --version
+```
 
 ### 3. Github
 Similar to docker, git is installed within IBM Cloud Tools, just verify your installation running:
@@ -109,7 +126,7 @@ Pro-tip: If you don't feel confident using git in the terminal, you can check an
 Artifactory is a universal Artifact Repository Manager, intergrating with CI/CD and DevOps tools to track your artifacts through the development process. As well as offering generic artifact storage, Artifactory offers bespoke and tool-integrated support for the most popular packages including Maven, Docker, NPM, Helm, PyPI, Gradle, Ivy, Debian and RPM.  
 TaaS offers Artifactory Enterprise in two high availability clusters, NA (Dallas) and EU (London). When onboarding to Artifactory, teams should select their primary cluster closest to their build infrastructure - the repository contents will be automatically replicated to the other cluster. This replica is provided for disaster recovery, and as an alternative (read only) download location.  
 We will use this repository to store all images created during BDD and DSAT exercise.
-Validate your access to Docker Repository. Execute the following commmand and enter with your w3 credentials: 
+Validate your access to Docker Repository. Execute the following commmand and enter with your w3 credentials:
 ```
 docker login gbs-appops-training-docker-local.artifactory.swg-devops.com
 ```
