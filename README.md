@@ -5,7 +5,7 @@
 ## Contents
 - [Pre-requisites](#Pre-requisites)
   * [1. Installing IBM Cloud Tools](#1-Installing-IBM-Cloud-Tools)
-  * [2. Installing Docker](#2-Installing-docker-(RHEL))
+  * [2. Installing Docker](#2-Installing-docker-RHEL)
   * [3. Github](#3-Github)
   * [4. TaaS Artifactory](#4-Validate-TaaS-Artifactory-access)
   * [5. TaaS Jenkins](#5-Validate-TaaS-Jenkins-access)
@@ -40,7 +40,7 @@ ibmcloud dev help
 [link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
-### 2. Installing Docker (RHEL)
+### 2. Installing Docker RHEL
 
 Docker is included and installed in the previous step, however it does not work for RHEL, if you're working with RHEL follow the next steps:
 
