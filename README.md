@@ -5,14 +5,15 @@
 ## Contents
 - [Pre-requisites](#Pre-requisites)
   * [1. Installing IBM Cloud Tools](#1-Installing-IBM-Cloud-Tools)
-  * [2. Installing Docker](#2-Installing-docker)
+  * [2. Installing Docker](#2-Installing-docker-(RHEL))
   * [3. Github](#3-Github)
   * [4. TaaS Artifactory](#4-Validate-TaaS-Artifactory-access)
   * [5. TaaS Jenkins](#5-Validate-TaaS-Jenkins-access)
   * [6. IBM Cloud Kubernetes Cluster creation](#6-IBM-Cloud-Kubernetes-Cluster-creation)
   * [7. Create an IBM Cloud APIKEY](#7-Create-an-IBM-Cloud-APIKEY)
-  * [8. Installing IBM Cloud Private CLI](#8-Installing-IBM-Cloud-Private-CLI)
-  * [9. Connecting to IBM Cloud KS cluster](#9-Connecting-to-IBM-Cloud-KS-cluster)
+  * [8. Connecting to IBM Cloud KS cluster](#8-Connecting-to-IBM-Cloud-KS-cluster)
+  * [9. Installing IBM Cloud Private CLI](#9-Installing-IBM-Cloud-Private-CLI)
+
 
 
 - Hands-On: BDD
@@ -23,10 +24,14 @@
 
 ### 1. Installing IBM Cloud tools
 
-1. Run the following command:
+1. For Mac and Linux, run the following command:
 ```
 curl -sL http://ibm.biz/idt-installer | bash
+```  
+For Windows 10 Pro, run the following command:
 ```
+[Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
+```  
 2. Verify the installation
 ```
 ibmcloud dev help
@@ -35,7 +40,7 @@ ibmcloud dev help
 [link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
-### 2. Installing Docker
+### 2. Installing Docker (RHEL)
 
 Docker is included and installed in the previous step, however it does not work for RHEL, if you're working with RHEL follow the next steps:
 
@@ -135,7 +140,26 @@ To create an API key for your user identity in the UI, complete the following st
 
 ![](resources/img/apikey.gif)
 
-### 8. Installing IBM Cloud Private CLI
+### 8. Connecting to IBM Cloud KS cluster
+
+1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
+```
+ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g default
+```
+2. Download the kubeconfig files for your cluster.
+```
+ibmcloud ks cluster-config --cluster <YOUR_CLUSTER>
+```
+3. Using the output from the previous step, set the KUBECONFIG environment variable. For example:
+```
+export KUBECONFIG=/home/$USER/.bluemix/plugins/container-service/clusters/mycluster/kube-config-hou02-mycluster.yml
+```
+4. Verify kubectl can communicate with your cluster.
+```
+kubectl cluster-info
+```
+
+### 9. Installing IBM Cloud Private CLI
 
 1. Login to https://bldbzt1160.bld.dst.ibm.com:8443/
 
@@ -170,23 +194,3 @@ cloudctl --help
 ```.term1
 cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 ```
-
-### 9. Connecting to IBM Cloud KS cluster
-
-1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
-```
-ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g default
-```
-2. Download the kubeconfig files for your cluster.
-```
-ibmcloud ks cluster-config --cluster <YOUR_CLUSTER>
-```
-3. Using the output from the previous step, set the KUBECONFIG environment variable. For example:
-```
-export KUBECONFIG=/home/$USER/.bluemix/plugins/container-service/clusters/mycluster/kube-config-hou02-mycluster.yml
-```
-4. Verify kubectl can communicate with your cluster.
-```
-kubectl cluster-info
-```
-
