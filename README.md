@@ -85,6 +85,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
+For other OS or troubleshooting check the link [here](https://docs.docker.com/compose/install/).
+
 ### 3. Github
 Similar to docker, git is installed within IBM Cloud Tools, just verify your installation running:
 
