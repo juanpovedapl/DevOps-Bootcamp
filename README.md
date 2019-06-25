@@ -14,6 +14,7 @@
   * [8. Create an IBM Cloud APIKEY](#8-Create-an-IBM-Cloud-APIKEY)
   * [9. Connecting to IBM Cloud KS cluster](#9-Connecting-to-IBM-Cloud-KS-cluster)
   * [10. Installing IBM Cloud Private CLI](#10-Installing-IBM-Cloud-Private-CLI)
+  * [11. SonarQube project creation](#11-SonarQube-project-creation)
 
 
 
@@ -214,3 +215,16 @@ cloudctl --help
 ```.term1
 cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 ```
+
+### 11. SonarQube project creation
+
+1. Validate your access to SonarQube:
+[SonarQube](http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/about)
+
+2. Login with the following credentials:
+User: w3-ID
+Password: w3-ID
+
+3. Once logged, create your project:
+
+![SonarQ project](/resources/img/SonarQ_project-creation.gif)
