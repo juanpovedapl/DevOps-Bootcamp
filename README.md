@@ -37,9 +37,9 @@ For Windows 10 Pro, run the following command:
 2. Verify the installation
 ```
 ibmcloud dev help
-```
+```  
 
-[link](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
 ### 2. Installing Docker RHEL
@@ -65,7 +65,7 @@ https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-[link](https://docs.docker.com/install/linux/docker-ce/centos/)
+More info [here](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 ### 3. Installing Docker Compose
 
