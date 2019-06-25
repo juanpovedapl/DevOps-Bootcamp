@@ -227,4 +227,20 @@ Password: w3-ID
 
 3. Once logged, create your project:
 
+- Go to "+" sign, in the up-right corner
+
+- Click on "Create new project"
+ Project Key: <w3-ID>-DSAT
+ Display Name: <w3-ID>-DSAT
+
+ - Click "Set Up". It will get you to a different screen called "Analyze your project"
+
+ - Create a token clicking in "Generate", save this token somewhere you remember (we will use it later in DSAT exercise).
+
+ - In the section "Run analysis on your project", select "Other (JS..."
+
+ - You're now ready to work with sonarQ.
+
 ![SonarQ project](/resources/img/SonarQ_project-creation.gif)
+
+ - Check that your project is listed in the Projects tab: http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/projects
