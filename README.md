@@ -222,8 +222,8 @@ cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 [SonarQube](http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/about)
 
 2. Login with the following credentials:
-User: w3-ID
-Password: w3-ID
+**User:** w3-ID
+**Password:** w3-ID
 
 3. Once logged, create your project:
 
