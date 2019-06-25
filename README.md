@@ -97,7 +97,7 @@ git --version
 
 #### Check your keys in github enterprise
 
-1. Go to [IBM Github Enterprise](https://github.ibm.com/)
+1. Log in to [IBM Github Enterprise](https://github.ibm.com/)
 
 2. Click on your profile photo, and go to "Settings", and then click on "SSH and GPG keys":
 
