@@ -230,8 +230,10 @@ Password: w3-ID
 - Go to "+" sign, in the up-right corner
 
 - Click on "Create new project"
- Project Key: <w3-ID>-DSAT
- Display Name: <w3-ID>-DSAT
+
+ **Project Key:** <w3-ID>-DSAT
+
+ **Display Name:** <w3-ID>-DSAT
 
  - Click "Set Up". It will get you to a different screen called "Analyze your project"
 
