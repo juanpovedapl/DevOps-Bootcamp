@@ -102,7 +102,7 @@ git --version
 
 2. Click on your profile photo, and go to "Settings", and then click on "SSH and GPG keys":
 
-![Check git keys](/resources/img/Check_git_keys.gif)
+![Check git keys](resources/img/Check_git_keys.gif)
 
 If you have added your keys before, your going to see something as in the gif.
 If you don't see any key, follow the instructions in [here](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) to add a new key.
