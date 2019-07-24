@@ -30,7 +30,7 @@
 ```
 curl -sL http://ibm.biz/idt-installer | bash
 ```  
-For Windows 10 Pro, run the following command:
+For Windows 10, run the following command (Right-click the Windows PowerShell icon, and select Run as administrator):
 ```
 [Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
 ```  
@@ -38,13 +38,20 @@ For Windows 10 Pro, run the following command:
 ```
 ibmcloud dev help
 ```  
+After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
 ### 2. Installing Docker RHEL
 
-Docker is included and installed in the previous step, however it does not work for RHEL, if you're working with RHEL follow the next steps:
+Docker is included and installed in the previous step in all operative systems (except for RHEL, if you're using RHEL, follow the instructions specified below), to check your installation run:
+```
+docker --help
+lvm2
+```
+
+If you're working with RHEL follow the next steps:
 
 1. Install required packages
 ```
@@ -86,6 +93,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 docker-compose --version
 ```
+Docker Desktop for Windows and Docker Toolbox already include Compose along with other Docker apps, so most Windows users do not need to install Compose separately.
 
 For other OS or troubleshooting check the link [here](https://docs.docker.com/compose/install/).
 
