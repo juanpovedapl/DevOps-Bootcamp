@@ -239,11 +239,22 @@ cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 1. Validate your access to SonarQube:
 [SonarQube](http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/about)
 
-2. Login with the following credentials:
+2. Login with the following credentials (follow the example):
+
+Using w3-ID@ibm.com:
 
 **User:** w3-ID
 
 **Password:** w3-ID
+
+For **example@ibm.com**:
+
+```.term1
+
+User: example
+
+Password: example
+```
 
 3. Once logged, create your project:
 
@@ -255,11 +266,19 @@ cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 
  **Display Name:** w3-ID-DSAT
 
+ For **example@ibm.com**:
+
+ ```.term1
+ Project Key: example-DSAT
+
+ Display Name: example-DSAT
+ ```
+
  - Click "Set Up". It will get you to a different screen called "Analyze your project"
 
  - Create a token clicking in "Generate", save this token somewhere you remember (we will use it later in DSAT exercise).
 
- - In the section "Run analysis on your project", select "Other (JS..."
+ - In the section "Run analysis on your project", select "Other (JS...)"
 
  - You're now ready to work with sonarQ.
 
