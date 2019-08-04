@@ -205,7 +205,10 @@ kubectl cluster-info
 
 ![InstallationCommand](/resources/img/getInstallationCommand-ICPCLI.gif)
 
-4. Open a terminal and run the command
+4. Open a terminal and run the command.
+
+
+For Windows, rename the downloaded file to cloudctl and place the file on the PATH environment variable. For Linux and MAC OS follow step 5:
 
 5. Once downloaded, change the permissions of the file:
 
