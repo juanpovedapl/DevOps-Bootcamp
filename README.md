@@ -165,7 +165,7 @@ To create an API key for your user identity in the UI, complete the following st
 
 1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
 ```
-ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g default
+ibmcloud login -apikey <YOUR_APIKEY>  -r us-south 
 ```
 2. Download the kubeconfig files for your cluster.
 ```
