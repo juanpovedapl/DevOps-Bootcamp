@@ -6,15 +6,16 @@
 - [Pre-requisites](#Pre-requisites)
   * [1. Installing IBM Cloud Tools](#1-Installing-IBM-Cloud-Tools)
   * [2. Installing Docker](#2-Installing-docker-RHEL)
-  * [3. Installing Docker Compose](#3-Installing-Docker-Compose)
-  * [4. Github](#4-Github)
-  * [5. TaaS Artifactory](#5-Validate-TaaS-Artifactory-access)
-  * [6. TaaS Jenkins](#6-Validate-TaaS-Jenkins-access)
-  * [7. IBM Cloud Kubernetes Cluster creation](#7-IBM-Cloud-Kubernetes-Cluster-creation)
-  * [8. Create an IBM Cloud APIKEY](#8-Create-an-IBM-Cloud-APIKEY)
-  * [9. Connecting to IBM Cloud KS cluster](#9-Connecting-to-IBM-Cloud-KS-cluster)
-  * [10. Installing IBM Cloud Private CLI](#10-Installing-IBM-Cloud-Private-CLI)
-  * [11. SonarQube project creation](#11-SonarQube-project-creation)
+  * [3. Testing Docker Installation](#3-testing-docker-installation)
+  * [4. Installing Docker Compose](#4-Installing-Docker-Compose)
+  * [5. Github](#5-Github)
+  * [6. TaaS Artifactory](#6-Validate-TaaS-Artifactory-access)
+  * [7. TaaS Jenkins](#7-Validate-TaaS-Jenkins-access)
+  * [8. IBM Cloud Kubernetes Cluster creation](#8-IBM-Cloud-Kubernetes-Cluster-creation)
+  * [9. Create an IBM Cloud APIKEY](#9-Create-an-IBM-Cloud-APIKEY)
+  * [10. Connecting to IBM Cloud KS cluster](#10-Connecting-to-IBM-Cloud-KS-cluster)
+  * [11. Installing IBM Cloud Private CLI](#11-Installing-IBM-Cloud-Private-CLI)
+  * [12. SonarQube project creation](#12-SonarQube-project-creation)
 
 
 
@@ -30,7 +31,7 @@
 ```
 curl -sL http://ibm.biz/idt-installer | bash
 ```  
-For Windows 10 Pro, run the following command:
+For Windows 10, run the following command (Right-click the Windows PowerShell icon, and select Run as administrator):
 ```
 [Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
 ```  
@@ -38,13 +39,15 @@ For Windows 10 Pro, run the following command:
 ```
 ibmcloud dev help
 ```  
+After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
 
-### 2. Installing Docker RHEL
+### 2. Installing Docker in RHEL
 
-Docker is included and installed in the previous step, however it does not work for RHEL, if you're working with RHEL follow the next steps:
+Docker is included and installed in pre-requisite 1, in all operative systems (except for RHEL).
+If you're working with RHEL follow the next steps:
 
 1. Install required packages
 ```
@@ -67,7 +70,18 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 
 More info [here](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-### 3. Installing Docker Compose
+
+### 3. Testing Docker Installation
+
+To test your installation in Windows 10 test your installation following the instructions [here](https://docs.docker.com/docker-for-windows/#test-your-installation).
+
+For any other OS, run the following:
+```
+docker --help
+lvm2
+```
+
+### 4. Installing Docker Compose
 
 For RHEL workstations, follow the next steps:
 
@@ -86,10 +100,11 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 docker-compose --version
 ```
+Docker Desktop for Windows and Docker Toolbox already include Compose along with other Docker apps, so most Windows users do not need to install Compose separately.
 
 For other OS or troubleshooting check the link [here](https://docs.docker.com/compose/install/).
 
-### 4. Github
+### 5. Github
 Similar to docker, git is installed within IBM Cloud Tools, just verify your installation running:
 
 ```.term1
@@ -102,9 +117,9 @@ git --version
 
 2. Click on your profile photo, and go to "Settings", and then click on "SSH and GPG keys":
 
-![Check git keys](/resources/img/Check_git_keys.gif)
+![Check git keys](resources/img/Check_git_keys.gif)
 
-If you have added before your keys before, your going to see something as in the gif.
+If you have added your keys before, your going to see something as in the gif.
 If you don't see any key, follow the instructions in [here](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) to add a new key.
 
 #### Fork this repository and clone your forked repository in your machine
@@ -126,7 +141,7 @@ git clone <your-repository-ssh-key>
 Pro-tip: If you don't feel confident using git in the terminal, you can check and practice with this [cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet).
 
 
-### 5. Validate TaaS Artifactory access
+### 6. Validate TaaS Artifactory access
 Artifactory is a universal Artifact Repository Manager, intergrating with CI/CD and DevOps tools to track your artifacts through the development process. As well as offering generic artifact storage, Artifactory offers bespoke and tool-integrated support for the most popular packages including Maven, Docker, NPM, Helm, PyPI, Gradle, Ivy, Debian and RPM.  
 TaaS offers Artifactory Enterprise in two high availability clusters, NA (Dallas) and EU (London). When onboarding to Artifactory, teams should select their primary cluster closest to their build infrastructure - the repository contents will be automatically replicated to the other cluster. This replica is provided for disaster recovery, and as an alternative (read only) download location.  
 We will use this repository to store all images created during BDD and DSAT exercise.
@@ -136,11 +151,11 @@ docker login gbs-appops-training-docker-local.artifactory.swg-devops.com
 ```
 You should obtain **Login Succeeded**.
 
-### 6. Validate TaaS Jenkins access
+### 7. Validate TaaS Jenkins access
 Jenkins is a continuous integration and continuous delivery application. By continuously building and testing software projects with Jenkins, it becomes easier for developers to integrate changes in a project and to find and solve defects more rapidly, thereby increasing your productivity.
 We will execute our pipeline on Jenkins as a Service offered by IBM. Use your w3 credentials to login into  https://gbs-appops-training-jenkins.swg-devops.com
 
-### 7. IBM Cloud Kubernetes Cluster creation
+### 8. IBM Cloud Kubernetes Cluster creation
 
 1. Go to [IBM Cloud](https://cloud.ibm.com/login) and log in with your w3 credentials.
 2. Once logged in, it will be displayed  the dashboard of your profile, go to the left menu and click on **Kubernetes**.
@@ -150,7 +165,7 @@ We will execute our pipeline on Jenkins as a Service offered by IBM. Use your w3
 6. The cluster has been requested, it will take some minutes to be configure and ready to use. Status will change to green (normal) when it is ready to be used.
 ![](resources/img/cluster.gif)
 
-### 8. Create an IBM Cloud APIKEY
+### 9. Create an IBM Cloud APIKEY
 As an IBM Cloud user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key can be that a user or organization can create several API Keys for different programs and the API keys can be deleted independently if compromised without interfering with other API keys or even the user.
 To create an API key for your user identity in the UI, complete the following steps:
 1. Go to **Manage > Access(IAM) > IBM Cloud API Keys.**
@@ -161,7 +176,7 @@ To create an API key for your user identity in the UI, complete the following st
 
 ![](resources/img/apikey.gif)
 
-### 9. Connecting to IBM Cloud KS cluster
+### 10. Connecting to IBM Cloud KS cluster
 
 1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
 ```
@@ -180,7 +195,7 @@ export KUBECONFIG=/home/$USER/.bluemix/plugins/container-service/clusters/myclus
 kubectl cluster-info
 ```
 
-### 10. Installing IBM Cloud Private CLI
+### 11. Installing IBM Cloud Private CLI
 
 1. Login to https://bldbzt1160.bld.dst.ibm.com:8443/
 
@@ -190,7 +205,10 @@ kubectl cluster-info
 
 ![InstallationCommand](/resources/img/getInstallationCommand-ICPCLI.gif)
 
-4. Open a terminal and run the command
+4. Open a terminal and run the command.
+
+
+For Windows, rename the downloaded file to cloudctl and place the file on the PATH environment variable. For Linux and MAC OS follow step 5:
 
 5. Once downloaded, change the permissions of the file:
 
@@ -216,16 +234,27 @@ cloudctl --help
 cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 ```
 
-### 11. SonarQube project creation
+### 12. SonarQube project creation
 
 1. Validate your access to SonarQube:
 [SonarQube](http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/about)
 
-2. Login with the following credentials:
+2. Login with the following credentials (follow the example):
+
+Using w3-ID@ibm.com:
 
 **User:** w3-ID
 
 **Password:** w3-ID
+
+For **example@ibm.com**:
+
+```.term1
+
+User: example
+
+Password: example
+```
 
 3. Once logged, create your project:
 
@@ -237,11 +266,19 @@ cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 
  **Display Name:** w3-ID-DSAT
 
+ For **example@ibm.com**:
+
+ ```.term1
+ Project Key: example-DSAT
+
+ Display Name: example-DSAT
+ ```
+
  - Click "Set Up". It will get you to a different screen called "Analyze your project"
 
  - Create a token clicking in "Generate", save this token somewhere you remember (we will use it later in DSAT exercise).
 
- - In the section "Run analysis on your project", select "Other (JS..."
+ - In the section "Run analysis on your project", select "Other (JS...)"
 
  - You're now ready to work with sonarQ.
 
