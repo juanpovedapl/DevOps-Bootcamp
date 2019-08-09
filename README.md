@@ -35,14 +35,15 @@ For Windows 10, run the following command (Right-click the Windows PowerShell ic
 ```
 [Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
 ```  
-2. Verify the installation
+2. Verify the installation running:
+
 ```
-ibmcloud dev help
-```  
+ibmcloud help
+```
+
 After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
-
 
 ### 2. Installing Docker in RHEL
 
@@ -180,8 +181,20 @@ To create an API key for your user identity in the UI, complete the following st
 
 1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
 ```
-ibmcloud login -apikey <YOUR_APIKEY>  -r us-south 
+ibmcloud login -apikey <YOUR_APIKEY>  -r us-south
 ```
+
+<details>
+  <summary>Are you having problems in this step?</summary>
+
+1. Could not find default resource: If you get this issue, try connecting to IBM Cloud KS Cluster with the following:
+
+```
+ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g Default
+```
+
+</details>
+
 2. Download the kubeconfig files for your cluster.
 ```
 ibmcloud ks cluster-config --cluster <YOUR_CLUSTER>
@@ -194,6 +207,7 @@ export KUBECONFIG=/home/$USER/.bluemix/plugins/container-service/clusters/myclus
 ```
 kubectl cluster-info
 ```
+
 
 ### 11. Installing IBM Cloud Private CLI
 
