@@ -180,12 +180,13 @@ To create an API key for your user identity in the UI, complete the following st
 ### 10. Connecting to IBM Cloud KS cluster
 
 1. Log in to your IBM Cloud account. We will use our API key to login into our cluster.
+
 ```
 ibmcloud login -apikey <YOUR_APIKEY>  -r us-south
 ```
 
 
-
+---
 <details>
   <summary>Are you having problems in this step?</summary>
 
@@ -196,7 +197,7 @@ ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g Default
 ```
 
 </details>
-
+---
 
 
 2. Download the kubeconfig files for your cluster.
