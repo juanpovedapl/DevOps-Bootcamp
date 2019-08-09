@@ -186,18 +186,18 @@ ibmcloud login -apikey <YOUR_APIKEY>  -r us-south
 ```
 
 
----
-<details>
-  <summary>Are you having problems in this step?</summary>
 
-1. Could not find default resource: If you get this issue, try connecting to IBM Cloud KS Cluster with the following:
+><details>
+>  <summary>Are you having problems in this step?</summary>
 
-```
-ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g Default
-```
+>1. Could not find default resource: If you get this issue, try connecting to IBM Cloud KS Cluster with the following:
+>
+>```
+>ibmcloud login -apikey <YOUR_APIKEY>  -r us-south -g Default
+>```
+>
+></details>
 
-</details>
----
 
 
 2. Download the kubeconfig files for your cluster.
