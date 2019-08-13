@@ -255,25 +255,8 @@ cloudctl login -a https://bldbzt1160.bld.dst.ibm.com:8443/ --skip-ssl-validation
 
 ### 12. SonarQube project creation
 
-1. Validate your access to SonarQube:
+1. Validate your access to SonarQube with your w3 credentials:
 [SonarQube](http://wdcdmzyz22033184.ibmcloud.dst.ibm.com/about)
-
-2. Login with the following credentials (follow the example):
-
-Using w3-ID@ibm.com:
-
-**User:** w3-ID
-
-**Password:** w3-ID
-
-For **example@ibm.com**:
-
-```.term1
-
-User: example
-
-Password: example
-```
 
 3. Once logged, create your project:
 
@@ -299,7 +282,7 @@ Password: example
 
  - In the section "Run analysis on your project", select "Other (JS...)"
 
- - You're now ready to work with sonarQ.
+ - You're now ready to work with SonarQ.
 
 ![SonarQ project](/resources/img/SonarQ_project-creation.gif)
 
