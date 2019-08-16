@@ -125,6 +125,7 @@ If you don't see any key, follow the instructions in [here](https://help.github.
 
 #### Fork this repository and clone your forked repository in your machine
 
+
 1. Fork this repository, as shown below:
 
 ![Fork](resources/img/fork_repository.jpg)
@@ -133,11 +134,30 @@ If you don't see any key, follow the instructions in [here](https://help.github.
 
 ![Clone repo](resources/img/Clone_repo.gif)
 
+
 3. Open a terminal and move to a folder where you want to store the repository, and enter the following:
+
+- For linux based workstations:
 
 ```.term1
 git clone <your-repository-ssh-key>
 ```
+
+- For Windows workstations:
+
+1. Open the file explorer and locate where you're going to clone the repository.
+
+2. Right click and select "Git Bash Here"
+
+![Git Bash Here](resources/img/Git Bash Here.jpg)
+
+3. A git terminal will open, so now, clone the repository:
+
+```.term1
+git clone <your-repository-ssh-key>
+```
+
+You're now ready to do changes, commit and push into your repository. Use this guide for any other repository to clone.
 
 Pro-tip: If you don't feel confident using git in the terminal, you can check and practice with this [cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet).
 
