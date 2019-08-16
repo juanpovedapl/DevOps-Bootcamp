@@ -149,7 +149,7 @@ git clone <your-repository-ssh-key>
 
 2. Right click and select "Git Bash Here"
 
-![Git Bash Here](resources/img/Git Bash Here.jpg)
+![Git Bash Here](resources/img/Git_Bash_Here.jpg)
 
 3. A git terminal will open, so now, clone the repository:
 
