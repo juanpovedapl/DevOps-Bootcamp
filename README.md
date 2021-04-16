@@ -3,27 +3,46 @@
 ## Welcome
 
 ## Contents
-- [Pre-requisites](#Pre-requisites)
-  * [1. Installing IBM Cloud Tools](#1-Installing-IBM-Cloud-Tools)
-  * [2. Installing Docker](#2-Installing-docker-RHEL)
-  * [3. Testing Docker Installation](#3-testing-docker-installation)
-  * [4. Installing Docker Compose](#4-Installing-Docker-Compose)
-  * [5. Github](#5-Github)
-  * [6. TaaS Artifactory](#6-Validate-TaaS-Artifactory-access)
-  * [7. TaaS Jenkins](#7-Validate-TaaS-Jenkins-access)
-  * [8. IBM Cloud Kubernetes Cluster creation](#8-IBM-Cloud-Kubernetes-Cluster-creation)
-  * [9. Create an IBM Cloud APIKEY](#9-Create-an-IBM-Cloud-APIKEY)
-  * [10. Connecting to IBM Cloud KS cluster](#10-Connecting-to-IBM-Cloud-KS-cluster)
-  * [11. Installing IBM Cloud Private CLI](#11-Installing-IBM-Cloud-Private-CLI)
-  * [12. SonarQube project creation](#12-SonarQube-project-creation)
+- [AppOps-Training](#appops-training)
+  - [Welcome](#welcome)
+  - [Contents](#contents)
+  - [Prerequisites](#prerequisites)
+    - [Education](#education)
+      - [Desirable](#desirable)
+    - [Assessment](#assessment)
+    - [Docker classroom](#docker-classroom)
+    - [Local Machine Requirements](#local-machine-requirements)
+    - [1. Installing IBM Cloud tools](#1-installing-ibm-cloud-tools)
+    - [2. Installing Docker in RHEL](#2-installing-docker-in-rhel)
+    - [3. Testing Docker Installation](#3-testing-docker-installation)
+    - [4. Installing Docker Compose](#4-installing-docker-compose)
+    - [5. Github](#5-github)
+      - [Check your keys in github enterprise](#check-your-keys-in-github-enterprise)
+      - [Fork this repository and clone your forked repository in your machine](#fork-this-repository-and-clone-your-forked-repository-in-your-machine)
+    - [6. Validate TaaS Artifactory access](#6-validate-taas-artifactory-access)
+    - [7. Validate TaaS Jenkins access](#7-validate-taas-jenkins-access)
+    - [8. IBM Cloud Kubernetes Cluster creation](#8-ibm-cloud-kubernetes-cluster-creation)
+    - [9. Create an IBM Cloud APIKEY](#9-create-an-ibm-cloud-apikey)
+    - [10. Connecting to IBM Cloud KS cluster](#10-connecting-to-ibm-cloud-ks-cluster)
+    - [11. Installing IBM Cloud Private CLI](#11-installing-ibm-cloud-private-cli)
+    - [12. SonarQube project creation](#12-sonarqube-project-creation)
 
 
+## Prerequisites
 
-- Hands-On: BDD
-- Hands-On: DSAT
-- Hands-On: CloudFoundry Weather Application
+### Education
+1. [Docker Essentials](https://yourlearning.ibm.com/activity/URL-7E83D36DDB5D)
+2. [Kubernetes 101](https://www.ibm.com/cloud/architecture/content/course/kubernetes-101)
+3. [Basic Linux CLI (Chapter 1, 2, 3 and 12)](https://learning.oreilly.com/library/view/basic-linux-terminal/9781484260357/)
 
-## Pre requisites
+#### Desirable
+
+
+### Assessment
+
+### Docker classroom
+
+### Local Machine Requirements
 
 ### 1. Installing IBM Cloud tools
 
