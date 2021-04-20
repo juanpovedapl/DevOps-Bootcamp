@@ -1,9 +1,9 @@
-# AppOps-Training
+# DevOps Bootcamp
 
 ## Welcome
 
 ## Contents
-- [AppOps-Training](#appops-training)
+- [DevOps Bootcamp](#devops-bootcamp)
   - [Welcome](#welcome)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
