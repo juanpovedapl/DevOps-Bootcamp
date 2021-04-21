@@ -11,11 +11,12 @@
     - [Docker classroom](#docker-classroom)
     - [Assessment](#assessment)
     - [Local Machine Requirements](#local-machine-requirements)
-    - [Docker Hub Account](#docker-hub-account)
-    - [Check your keys in GitHub enterprise](#check-your-keys-in-github-enterprise)
-    - [IBM Cloud Kubernetes Cluster creation.](#ibm-cloud-kubernetes-cluster-creation)
-    - [Create an IBM Cloud APIKEY.](#create-an-ibm-cloud-apikey)
-    - [Connecting to IBM Cloud Kubernetes Service cluster.](#connecting-to-ibm-cloud-kubernetes-service-cluster)
+    - [Keys and accounts creation](#keys-and-accounts-creation)
+      - [Docker Hub Account](#docker-hub-account)
+      - [Check your keys in GitHub enterprise](#check-your-keys-in-github-enterprise)
+      - [IBM Cloud Kubernetes Cluster creation.](#ibm-cloud-kubernetes-cluster-creation)
+      - [Create an IBM Cloud APIKEY.](#create-an-ibm-cloud-apikey)
+      - [Connecting to IBM Cloud Kubernetes Service cluster.](#connecting-to-ibm-cloud-kubernetes-service-cluster)
 
 
 ## Prerequisites
@@ -55,13 +56,15 @@ Topics:
 - Red Hat 7.x users, click [here](local-machine-requirements/rh7-requirements.md).
 - Windows users, click [here](local-machine-requirements/windows-requirements.md).
 
-### Docker Hub Account
+### Keys and accounts creation
+
+#### Docker Hub Account
 
 1. Create Docker Hub account. Go to: https://hub.docker.com/ 
    
 2. Select any DockerID for your account, a personal email and a password (take note of your DockerID and password we will need them in the bootcamp).
 
-### Check your keys in GitHub enterprise
+#### Check your keys in GitHub enterprise
 
 1. Log in to [IBM GitHub Enterprise](https://github.ibm.com/)
 
@@ -75,7 +78,7 @@ If you don't see any key, follow the instructions in [here](https://help.github.
 **Tip:** If you don't feel confident using git in the terminal, you can check and practice with this [cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet).
 
 
-### IBM Cloud Kubernetes Cluster creation.
+#### IBM Cloud Kubernetes Cluster creation.
 1. Verify if you have an IBM Cloud account with your w3 ID. 
    - Go to [IBM Cloud](https://cloud.ibm.com/login) and login with your w3 credentials.
    - Check in the up-right corner the dropdown list, and verify that your name is listed or selected, as in the following screen:
@@ -108,7 +111,7 @@ Click **Create cluster**.
 
 ![](resources/img/cluster.gif)
 
-### Create an IBM Cloud APIKEY.
+#### Create an IBM Cloud APIKEY.
 
 As an IBM Cloud user you might want to use an API key when you enable a program or script without distributing your password to the script. To create an API key for your user identity in the UI, complete the following steps:
 1. Go to **Manage > Access(IAM) > IBM Cloud API Keys.**
@@ -119,7 +122,7 @@ As an IBM Cloud user you might want to use an API key when you enable a program 
 
 ![](resources/img/apikey.gif)
 
-### Connecting to IBM Cloud Kubernetes Service cluster.
+#### Connecting to IBM Cloud Kubernetes Service cluster.
 
 1. Log in to your IBM Cloud account. We will use our API key to log in into our cluster.
 
