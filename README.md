@@ -11,7 +11,8 @@
     - [Docker classroom](#docker-classroom)
     - [Assessment](#assessment)
     - [Local Machine Requirements](#local-machine-requirements)
-        - [Check your keys in GitHub enterprise](#check-your-keys-in-github-enterprise)
+    - [Docker Hub Account](#docker-hub-account)
+    - [Check your keys in GitHub enterprise](#check-your-keys-in-github-enterprise)
     - [IBM Cloud Kubernetes Cluster creation.](#ibm-cloud-kubernetes-cluster-creation)
     - [Create an IBM Cloud APIKEY.](#create-an-ibm-cloud-apikey)
     - [Connecting to IBM Cloud Kubernetes Service cluster.](#connecting-to-ibm-cloud-kubernetes-service-cluster)
@@ -50,12 +51,17 @@ Topics:
 ### Local Machine Requirements
 
 - MacOS users, click [here](local-machine-requirements/macos-requirements.md).
-- Red Hat 8.x users, click here.
-- Red Hat 7.x users, click here.
-- Windows users, click here.
+- Red Hat 8.x users, click [here](local-machine-requirements/rh8-requirements.md).
+- Red Hat 7.x users, click [here](local-machine-requirements/rh7-requirements.md).
+- Windows users, click [here](local-machine-requirements/windows-requirements.md).
 
+### Docker Hub Account
 
-##### Check your keys in GitHub enterprise
+1. Create Docker Hub account. Go to: https://hub.docker.com/ 
+   
+2. Select any DockerID for your account, a personal email and a password (take note of your DockerID and password we will need them in the bootcamp).
+
+### Check your keys in GitHub enterprise
 
 1. Log in to [IBM GitHub Enterprise](https://github.ibm.com/)
 
