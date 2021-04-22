@@ -50,7 +50,7 @@ Topics:
 ### Local Machine Requirements
 
 - MacOS users, click [here](local-machine-requirements/macos-requirements.md).
-- Red Hat 8.x users, click here.
+- Red Hat 8.x users, click [here](local-machine-requirements/rh8-requirements.md).
 - Red Hat 7.x users, click here.
 - Windows users, click here.
 
