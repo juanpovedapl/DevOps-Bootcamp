@@ -19,36 +19,30 @@ podman --version
 ```
 In case it is not installed, please follow the next steps:
 
-1. Install required packages
+1. Enable EPEL and codeready-builder repository
 ```
-sudo yum install -y yum-utils \
-device-mapper-persistent-data \
-lvm2
+sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-*-rpms"
+
 ```
 
-2. Add **stable** repository
-```
-sudo yum-config-manager \
---add-repo \
-https://download.docker.com/linux/centos/docker-ce.repo
-```
-
-3. Enable container and install **podamn**
+2. Enable container-tools and install **podamn**
 
 ```.term1
-sudo yum module enable -y container-tools:1.0
+sudo yum module enable -y container-tools
 
-sudo yum module install -y container-tools:1.0
+sudo yum module install -y container-tools
 ```
 
 More [info](https://podman.io/getting-started/installation)
 
-4. Verify your installation:
+3. Verify your installation:
 ```.term1
 podman --version
 ```
 
-5. In order to install **podman-compose** run on your terminal:
+4. In order to install **podman-compose** run on your terminal:
 ```.term1
 podman-compose
  ```
