@@ -23,7 +23,7 @@ In case it is not installed, please follow the next steps:
 ```
 sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 
-sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-*-rpms"
+sudo subscription-manager repos --enable codeready-builder-for-rhel-8-rpms
 
 ```
 
