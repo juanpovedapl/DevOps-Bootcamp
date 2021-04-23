@@ -39,20 +39,18 @@ More [info](https://podman.io/getting-started/installation)
 
 3. Verify your installation:
 ```.term1
-podman --version
+podman version
 ```
 
 4. In order to install **podman-compose** run on your terminal:
 ```.term1
-podman-compose
+sudo yum install podman-compose
  ```
-
-And type **y** to accept the installation of the packages and proceed with the changes. And verify your installation:
+Verify your installation:
 
 ```.term1
 podman-compose version
 ```
-Podman installation in RedHat 8.x includes kubernetes and other useful tools.
 
 ## Installing IBM Cloud tools.
 
@@ -90,14 +88,41 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 
 ## Openshift CLI
 
-1. If you have a RedHat account, please follow this instrucctions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-rpm_cli-developer-commands).
-2. If you don't have a redhat account download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-linux-4.7.5.tar.gz).
-2.1 Follow the instructions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-linux_cli-developer-commands).
+1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-linux-4.7.5.tar.gz).
+
+2. Locate the path where download is saved and create a folder to decompress:
+
+```.term1
+mkdir oc
+
+```
+3. Decompress file:
+
+```.term1
+tar xvfz openshift-client-linux-4.7.5.tar.gz -C oc
+
+```
+4. Export variable:
+```.term1
+cd oc
+pwd
+export PATH=$PATH:<pwd_direction>
+
+```
+5. Verify the installation running:
+```.term1
+oc version
+
+kubectl version
+
+```
+
+More [info](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-linux_cli-developer-commands).
 
 
 ## GitHub
 Git is installed within IBM Cloud Tools, just verify your installation:
 
 ```.term1
-git --version
+git version
 ```
