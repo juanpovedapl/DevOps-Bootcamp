@@ -1,7 +1,7 @@
 
 #### 1. Installing IBM Cloud tools.
 
-1. For Mac and Linux, run the following command:
+1. For Linux, run the following command:
 ```
 curl -sL http://ibm.biz/idt-installer | bash
 ```  
