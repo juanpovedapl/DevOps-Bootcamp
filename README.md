@@ -31,6 +31,8 @@
     - Lesson 3: Essential File Management Tools.
     - Lesson 4: Working with Text Files.
 
+---
+
 ### Docker classroom
 Once you are done with education, proceed with the following docker laboratories (which include essential practices for the bootcamp):
 - [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
@@ -39,8 +41,9 @@ Once you are done with education, proceed with the following docker laboratories
 - [30 min: Docker-compose/podman-compose](checking)
 - [30 min: Docker swarm](http://pwd.dst.ibm.com:4000/Visualizer/)
 
-### Assessment
+---
 
+### Assessment
 Do you think you are ready for the bootcamp? Test your knowledge with a pre-assessment we prepared for you!
 Minimum score: 80%
 Time: 30 min
@@ -48,13 +51,15 @@ Topics:
   Linux CLI, Docker and Kubernetes basics.
 - [30 min: Assessment](link.here)
 
+---
 
 ### Local Machine Requirements
-
 - MacOS users, click [here](local-machine-requirements/macos-requirements.md).
 - Red Hat 8.x users, click [here](local-machine-requirements/rh8-requirements.md).
 - Red Hat 7.x users, click [here](local-machine-requirements/rh7-requirements.md).
 - Windows users, click [here](local-machine-requirements/windows-requirements.md).
+
+---
 
 ### Keys and accounts creation
 
@@ -63,6 +68,8 @@ Topics:
 1. Create Docker Hub account. Go to: https://hub.docker.com/ 
    
 2. Select any DockerID for your account, a personal email and a password (take note of your DockerID and password we will need them in the bootcamp).
+
+---
 
 #### Check your keys in GitHub enterprise
 
@@ -77,6 +84,7 @@ If you don't see any key, follow the instructions in [here](https://help.github.
 
 **Tip:** If you don't feel confident using git in the terminal, you can check and practice with this [cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet).
 
+---
 
 #### IBM Cloud Kubernetes Cluster creation.
 1. Verify if you have an IBM Cloud account with your w3 ID. 
@@ -111,6 +119,8 @@ Click **Create cluster**.
 
 ![](resources/img/cluster.gif)
 
+---
+
 #### Create an IBM Cloud APIKEY.
 
 As an IBM Cloud user you might want to use an API key when you enable a program or script without distributing your password to the script. To create an API key for your user identity in the UI, complete the following steps:
@@ -121,6 +131,8 @@ As an IBM Cloud user you might want to use an API key when you enable a program 
 5. Then, click **Show** to display the API key. Or, click **Copy** to copy and save it for later, or click **Download.**
 
 ![](resources/img/apikey.gif)
+
+---
 
 #### Connecting to IBM Cloud Kubernetes Service cluster.
 

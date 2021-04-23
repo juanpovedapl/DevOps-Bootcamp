@@ -10,6 +10,8 @@
   - [Openshift CLI](#openshift-cli)
   - [GitHub](#github)
 
+---
+
 ## Installing IBM Cloud tools
 
 1. For Linux, run the following command:
@@ -24,6 +26,8 @@ ibmcloud help
 ```
 
 You can find more info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started).
+
+---
 
 ## Installing Docker Engine
 
@@ -59,6 +63,8 @@ Run the following:
 docker --help
 ```
 
+---
+
 ## Installing Docker Compose
 
 For RHEL workstations, follow the next steps:
@@ -82,6 +88,8 @@ Docker Desktop for Windows and Docker Toolbox already include Compose along with
 
 For troubleshooting check the link [here](https://docs.docker.com/compose/install/).
 
+---
+
 ## Add test environment to your hosts file
 1. Open a terminal window and execute:
 ```
@@ -101,6 +109,8 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 ...
 ```
 
+---
+
 ## Openshift CLI
 
 1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/), select the corresponding to your OS. i.e. `openshift-client-linux-4.7.5.tar.gz`
@@ -115,6 +125,8 @@ oc version
 ```
 
 For more information refer following link: [Linux OC CLI installation instructions](https://docs.openshift.com/container-platform/4.7/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-linux_cli-developer-commands)
+
+---
 
 ## GitHub
 Similar to docker, git is installed within IBM Cloud Tools, just verify your installation:

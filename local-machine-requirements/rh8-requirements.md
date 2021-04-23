@@ -2,13 +2,16 @@
 # RedHat 8.x local machine requirements
 
 ## Contents
-- [RedHat 8.x machine requirements](#RedHat8.x-machine-requirements)
+- [RedHat 8.x local machine requirements](#redhat-8x-local-machine-requirements)
   - [Contents](#contents)
   - [Installing Podman and Podman-Compose](#installing-podman-and-podman-compose)
+    - [By default **podman** is installed on RH 8.x, verify your installation:](#by-default-podman-is-installed-on-rh-8x-verify-your-installation)
   - [Installing IBM Cloud tools.](#installing-ibm-cloud-tools)
   - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
   - [Openshift CLI](#openshift-cli)
   - [GitHub](#github)
+
+---
 
 ## Installing Podman and Podman-Compose
 
@@ -51,6 +54,8 @@ Verify your installation:
 podman-compose version
 ```
 
+---
+
 ## Installing IBM Cloud tools.
 
 1. Run the following command:
@@ -64,6 +69,8 @@ ibmcloud help
 ```
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+
+---
 
 ## Add test environment to your hosts file
 1. Open a terminal window and execute:
@@ -83,6 +90,8 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
 ...
 ```
+
+---
 
 ## Openshift CLI
 
@@ -107,6 +116,7 @@ kubectl version
 
 More [info](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-linux_cli-developer-commands).
 
+---
 
 ## GitHub
 Git is installed within IBM Cloud Tools, just verify your installation:

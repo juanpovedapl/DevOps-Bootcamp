@@ -4,6 +4,7 @@
 - [MacOS local machine requirements](#macos-local-machine-requirements)
   - [Contents](#contents)
   - [Installing Docker and Docker Compose](#installing-docker-and-docker-compose)
+  - [Docker installation in Mac includes docker compose, kubernetes and other useful tools.](#docker-installation-in-mac-includes-docker-compose-kubernetes-and-other-useful-tools)
   - [Installing IBM Cloud tools.](#installing-ibm-cloud-tools)
   - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
   - [Openshift CLI](#openshift-cli)
@@ -16,6 +17,7 @@
 3. Follow the instructions to install docker desktop.
 
 Docker installation in Mac includes docker compose, kubernetes and other useful tools.
+---
 
 ## Installing IBM Cloud tools.
 
@@ -31,6 +33,8 @@ ibmcloud help
 ```
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+
+---
 
 ## Add test environment to your hosts file
 1. Open a terminal window and execute:
@@ -51,11 +55,14 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 ...
 ```
 
+---
+
 ## Openshift CLI
 
 1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-mac-4.7.5.tar.gz).
 2. Follow the instructions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-macos_cli-developer-commands).
 
+---
 
 ## GitHub
 Git is installed within IBM Cloud Tools, just verify your installation:

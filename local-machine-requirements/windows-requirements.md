@@ -20,6 +20,8 @@
 
 Docker installation in Windows includes docker compose, kubernetes and other useful tools.
 
+---
+
 ## GitHub
 1. Go to [Git official page](https://git-scm.com/download/win) and under “Git for Windows Setup”, select the option that suits your machine architecture.
    
@@ -37,7 +39,9 @@ git --version
 ```
 git --version
 ```
-   
+
+---  
+
 ## Installing IBM Cloud tools
 
 1.  Right-click the Windows PowerShell icon, and select Run as administrator
@@ -56,6 +60,8 @@ After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
+---
+
 ## Add test environment to your hosts file
 
 1. Execute as administrator any text editor.
@@ -72,6 +78,8 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
 ...
 ```
+
+---
 
 ## Openshift CLI
 
