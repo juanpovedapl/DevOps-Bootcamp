@@ -4,10 +4,11 @@
 - [Windows local machine requirements](#windows-local-machine-requirements)
   - [Contents](#contents)
   - [Installing Docker and Docker Compose](#installing-docker-and-docker-compose)
-  - [Installing IBM Cloud tools.](#installing-ibm-cloud-tools)
-      - [5. Openshift CLI](#5-openshift-cli)
-      - [6. GitHub](#6-github)
   - [GitHub](#github)
+  - [Installing IBM Cloud tools](#installing-ibm-cloud-tools)
+  - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
+  - [Openshift CLI](#openshift-cli)
+
 
 ## Installing Docker and Docker Compose
 
@@ -19,7 +20,25 @@
 
 Docker installation in Windows includes docker compose, kubernetes and other useful tools.
 
-## Installing IBM Cloud tools.
+## GitHub
+1. Go to [Git official page](https://git-scm.com/download/win) and under “Git for Windows Setup”, select the option that suits your machine architecture.
+   
+2. Run Git for Windows launcher allowing application to make changes in your device.
+3. Accept the license and for each configuration accept the defaults (unless you want to configure or change them).
+4. Once finished, launch Git in Windows, there are two ways:
+   1.  you can do it using PowerShell and typing:
+   
+```
+git --version
+```
+
+   1. Using Git Bash, which is a shell designed for git. Search in your machine “Git Bash” and execute it, once open type the following:
+
+```
+git --version
+```
+   
+## Installing IBM Cloud tools
 
 1.  Right-click the Windows PowerShell icon, and select Run as administrator
 2.  Run the following command:
@@ -37,18 +56,24 @@ After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 
+## Add test environment to your hosts file
 
-
-#### 5. Openshift CLI
-
-1. Download [OC CLI installation file]([link.here](https://downloads-openshift-console.apps-crc.testing/amd64/windows/oc.zip).
-2. Follow the instructions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-windows_cli-developer-commands).
-
-
-#### 6. GitHub
-## GitHub
-Git is installed within IBM Cloud Tools, just verify your installation:
-
-```.term1
-git --version
+1. Execute as administrator any text editor.
+2. Open the “hosts” file located at: C:\Windows\System32\drivers\etc\
+3. Add the following line at the end of the file:
 ```
+9.220.50.15 api.crc.testing console-openshift-console.apps-crc.testing default-route-openshift-image-registry.apps-crc.testing oauth-openshift.apps-crc.testing
+```
+
+4. Save changes and verify you can ping one of the aliases as in the example below:
+```
+$ ping console-openshift-console.apps-crc.testing
+PING api.crc.testing (9.220.50.15): 56 data bytes
+64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
+...
+```
+
+## Openshift CLI
+
+1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-windows-4.7.5.zip).
+2. Follow the instructions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-windows_cli-developer-commands).

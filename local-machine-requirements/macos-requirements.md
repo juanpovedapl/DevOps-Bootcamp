@@ -38,12 +38,12 @@ More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
 sudo vi /etc/hosts
 ```
 
-Type your Mac user password, and add the following line at the end of the file:
+2. Type your Mac user password, and add the following line at the end of the file:
 ```
 9.220.50.15 api.crc.testing console-openshift-console.apps-crc.testing default-route-openshift-image-registry.apps-crc.testing oauth-openshift.apps-crc.testing
 ```
 
-Verify you can ping one of the aliases as in the example below:
+3. Save changes and then verify you can ping one of the aliases as in the example below:
 ```
 $ ping console-openshift-console.apps-crc.testing
 PING api.crc.testing (9.220.50.15): 56 data bytes
@@ -53,7 +53,7 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 
 ## Openshift CLI
 
-1. Download [OC CLI installation file](https://downloads-openshift-console.apps-crc.testing/amd64/mac/oc.zip).
+1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-mac-4.7.5.tar.gz).
 2. Follow the instructions [here](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-macos_cli-developer-commands).
 
 
