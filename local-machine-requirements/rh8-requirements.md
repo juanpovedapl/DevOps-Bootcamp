@@ -88,23 +88,17 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 
 1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-linux-4.7.5.tar.gz).
 
-2. Locate the path where download is saved and create a folder to decompress running:
-
+2. Locate the path where download is saved and create a folder to decompress. And then decompress the file running:
 ```.term1
-mkdir oc
+tar xvfz openshift-client-linux-4.7.5.tar.gz -C <folder>
 ```
-3. Decompress file running:
-
+3. Export variable running:
 ```.term1
-tar xvfz openshift-client-linux-4.7.5.tar.gz -C oc
-```
-4. Export variable running:
-```.term1
-cd oc
+cd <folder>
 pwd
 export PATH=$PATH:<pwd_direction>
 ```
-5. Verify the installation running:
+4. Verify the installation running:
 ```.term1
 oc version
 
