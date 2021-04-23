@@ -37,7 +37,7 @@ sudo yum module install -y container-tools
 
 More [info](https://podman.io/getting-started/installation)
 
-3. Verify your installation:
+3. Verify your installation running:
 ```.term1
 podman version
 ```
@@ -60,7 +60,6 @@ curl -sL http://ibm.biz/idt-installer | bash
 ```  
 
 2. Verify the installation running:
-
 ```
 ibmcloud help
 ```
@@ -90,31 +89,27 @@ PING api.crc.testing (9.220.50.15): 56 data bytes
 
 1. Download [OC CLI installation file](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.5/openshift-client-linux-4.7.5.tar.gz).
 
-2. Locate the path where download is saved and create a folder to decompress:
+2. Locate the path where download is saved and create a folder to decompress running:
 
 ```.term1
 mkdir oc
-
 ```
-3. Decompress file:
+3. Decompress file running:
 
 ```.term1
 tar xvfz openshift-client-linux-4.7.5.tar.gz -C oc
-
 ```
-4. Export variable:
+4. Export variable running:
 ```.term1
 cd oc
 pwd
 export PATH=$PATH:<pwd_direction>
-
 ```
 5. Verify the installation running:
 ```.term1
 oc version
 
 kubectl version
-
 ```
 
 More [info](https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/getting-started-cli.html#cli-installing-cli-on-linux_cli-developer-commands).
