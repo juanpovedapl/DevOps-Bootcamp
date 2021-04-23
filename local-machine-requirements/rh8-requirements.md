@@ -12,7 +12,7 @@
 
 ## Installing Podman and Podman-Compose
 
-By default podman and podman-compose  is installed on RH 8.x, verify your installation:
+### By default **podman** is installed on RH 8.x, verify your installation:
 
 ```.term1
 podman --version
