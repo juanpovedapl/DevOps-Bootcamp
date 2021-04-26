@@ -38,18 +38,21 @@ Once you are done with education, proceed with the following docker laboratories
 - [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
 - [30 min: Docker Volumes](http://pwd.dst.ibm.com:4000/volumes/)
 - [30 min: Docker Ports](http://pwd.dst.ibm.com:4000/ports/)
-- [30 min: Docker-compose/podman-compose](checking)
 - [30 min: Docker swarm](http://pwd.dst.ibm.com:4000/Visualizer/)
 
 ---
 
 ### Assessment
-Do you think you are ready for the bootcamp? Test your knowledge with a pre-assessment we prepared for you!
+Do you think you are ready for the DevOps Bootcamp? 
+Test your knowledge with a pre-assessment we prepared for you!
+
 Minimum score: 80%
 Time: 30 min
 Topics:
-  Linux CLI, Docker and Kubernetes basics.
-- [30 min: Assessment](link.here)
+  Linux CLI
+  Docker
+  Kubernetes basics
+- [30 min: Assessment](https://yourlearning.ibm.com/activity/QUIZ-82DAD94C11BE)
 
 ---
 
