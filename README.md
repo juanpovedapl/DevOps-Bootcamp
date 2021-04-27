@@ -31,7 +31,7 @@
 ---
 
 ### Docker classroom
-Once you are done with education, proceed with the following docker laboratories (which include essential practices for the bootcamp):
+Once you are done with education, proceed with the following docker laboratories (which include essential practices for the bootcamp). When you're done with each, take an screenshot of the output and send it to DevOps-Bootcamp slack channel:
 - [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
 - [30 min: Docker Volumes](http://pwd.dst.ibm.com:4000/volumes/)
 - [30 min: Docker Ports](http://pwd.dst.ibm.com:4000/ports/)
