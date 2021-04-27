@@ -1,10 +1,7 @@
 # DevOps Bootcamp
 
-## Welcome
-
 ## Contents
 - [DevOps Bootcamp](#devops-bootcamp)
-  - [Welcome](#welcome)
   - [Contents](#contents)
   - [Prerequisites](#prerequisites)
     - [Education](#education)
