@@ -43,7 +43,7 @@ Once you are done with education, proceed with the following docker laboratories
 Do you think you are ready for the DevOps Bootcamp? 
 Test your knowledge with a pre-assessment we prepared for you!
 
-[30 min: Assessment]()
+[30 min: Assessment](https://yourlearning.ibm.com/activity/QUIZ-82DAD94C11BE)
 
 - Minimum score: 80%
 - Time: 30 min
