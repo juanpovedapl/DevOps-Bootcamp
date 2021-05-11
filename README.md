@@ -14,6 +14,7 @@
       - [IBM Cloud Kubernetes Cluster creation.](#ibm-cloud-kubernetes-cluster-creation)
       - [Create an IBM Cloud APIKEY.](#create-an-ibm-cloud-apikey)
       - [Connecting to IBM Cloud Kubernetes Service cluster.](#connecting-to-ibm-cloud-kubernetes-service-cluster)
+    - [Pull custom Jenkins docker image](#pull-custom-jenkins-docker-image)
 
 
 ## Prerequisites
@@ -161,3 +162,20 @@ ibmcloud ks cluster config --cluster <YOUR_CLUSTER_NAME>
 ```
 kubectl cluster-info
 ```
+
+---
+
+### Pull custom Jenkins docker image
+
+1. Open a terminal and login to Artifactory (container image repository) with your w3 credentials:
+```
+docker login gbs-appops-k8s-na-team-gbs-devsecops-k8s-docker-local.artifactory.swg-devops.com
+```
+
+2. Pull Jenkins custom image.
+   
+```
+docker pull gbs-appops-k8s-na-team-gbs-devsecops-k8s-docker-local.artifactory.swg-devops.com/jenkins:lts
+```
+
+**Note:** If you're using Podman, just substitute commands from “docker” to “Podman”.
