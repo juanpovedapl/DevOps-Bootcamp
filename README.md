@@ -36,7 +36,8 @@ Once you are done with education, proceed with the following docker laboratories
 - [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
 - [30 min: Docker Volumes](http://pwd.dst.ibm.com:4000/volumes/)
 - [30 min: Docker Ports](http://pwd.dst.ibm.com:4000/ports/)
-- [30 min: Docker swarm](http://pwd.dst.ibm.com:4000/Visualizer/)
+- [30 min: Docker Compose](http://pwd.dst.ibm.com:4000/docker-compose/)
+- [30 min: Docker Swarm](http://pwd.dst.ibm.com:4000/swarm-visualizer/)
 
 ---
 
