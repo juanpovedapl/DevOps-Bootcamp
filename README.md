@@ -28,8 +28,8 @@
     - Lesson 2: Using Essential Tools.
     - Lesson 3: Essential File Management Tools.
     - Lesson 4: Working with Text Files.
-5. [20 min: Git introduction](https://yourlearning.ibm.com/activity/URL-6AF7FBEE60B3)
-6. [7 min: What is OpenShift](https://yourlearning.ibm.com/activity/URL-DC67FDA4DA9C)
+4. [20 min: Git introduction](https://yourlearning.ibm.com/activity/URL-6AF7FBEE60B3)
+5. [7 min: What is OpenShift](https://yourlearning.ibm.com/activity/URL-DC67FDA4DA9C)
 
 ---
 
