@@ -8,6 +8,7 @@
   - [Day 3](#day-3)
   - [Day 4](#day-4)
   - [Day 5](#day-5)
+  - [Next Steps](#next-steps)
 
 ## Day 1
 
@@ -35,6 +36,11 @@
 ## Day 5
 
 - [Health-ui repo (participants): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui#7-create-db-and-api-microservice)
-- - [Health-ui repo (participants): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui-mentor#7-create-db-and-api-microservice)
+- [Health-ui repo (participants): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui-mentor#7-create-db-and-api-microservice)
 - [Health-api repo (participants): Manual deployment in OCP](https://github.ibm.com/DevOps-Trainings/health-api)
 - [Health-db repo (mentors): Manual deployment in OCP](https://github.ibm.com/DevOps-Trainings/health-db)
+
+## Next Steps
+
+- [Health-ui in AWS](https://github.ibm.com/DevOps-Trainings/health-ui/AWS%20ECS)
+- [Automated deployment with Tekton](https://w3.ibm.com/services/lighthouse/documents/174056)
