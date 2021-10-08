@@ -42,5 +42,5 @@
 
 ## Next Steps
 
-- [Health-ui in AWS](https://github.ibm.com/DevOps-Trainings/health-ui/AWS%20ECS)
+- [Health-ui in AWS](https://github.ibm.com/DevOps-Trainings/health-ui/tree/master/AWS%20ECS)
 - [Automated deployment with Tekton](https://w3.ibm.com/services/lighthouse/documents/174056)
