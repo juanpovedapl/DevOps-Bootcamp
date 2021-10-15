@@ -36,7 +36,7 @@
 ## Day 5
 
 - [Health-ui repo (participants): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui#7-create-db-and-api-microservice)
-- [Health-ui repo (participants): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui-mentor#7-create-db-and-api-microservice)
+- [Health-ui repo (mentor): Creating and integrating more microservices](https://github.ibm.com/DevOps-Trainings/health-ui-mentor#7-create-db-and-api-microservice)
 - [Health-api repo (participants): Manual deployment in OCP](https://github.ibm.com/DevOps-Trainings/health-api)
 - [Health-db repo (mentors): Manual deployment in OCP](https://github.ibm.com/DevOps-Trainings/health-db)
 
