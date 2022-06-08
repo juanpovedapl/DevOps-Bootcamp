@@ -20,7 +20,7 @@
 ## Prerequisites
 
 ### Education
-1. [3 hours: Docker Essentials](https://yourlearning.ibm.com/activity/URL-7E83D36DDB5D)
+1. [3 hours: Docker Essentials (Badge)](https://yourlearning.ibm.com/activity/URL-7E83D36DDB5D)
 2. [1 hour: Kubernetes 101](https://yourlearning.ibm.com/activity/URL-0651426E4A0B)
 3. [4 hours: Linux Fundamentals.](https://learning.oreilly.com/videos/linux-fundamentals/9780135560396) 
  - **For Linux Fundamentals course, we suggest taking only following lessons:**
@@ -30,6 +30,7 @@
     - Lesson 4: Working with Text Files.
 4. [20 min: Git introduction](https://yourlearning.ibm.com/activity/URL-6AF7FBEE60B3)
 5. [7 min: What is OpenShift](https://yourlearning.ibm.com/activity/URL-DC67FDA4DA9C)
+6. [5 hours: DevSecOps Essentials (Badge)](https://yourlearning.ibm.com/credential/CREDLY-fe4189f6-f5fa-48f1-8eb9-7bd4636dddce)
 
 ---
 
@@ -170,15 +171,10 @@ kubectl cluster-info
 
 ### Pull custom Jenkins docker image
 
-1. Open a terminal and login to Artifactory (container image repository) with your w3 credentials:
-```
-docker login gbs-appops-k8s-na-team-gbs-devsecops-k8s-docker-local.artifactory.swg-devops.com
-```
-
-2. Pull Jenkins custom image.
+1. Pull Jenkins custom image.
    
 ```
-docker pull gbs-appops-k8s-na-team-gbs-devsecops-k8s-docker-local.artifactory.swg-devops.com/jenkins:lts
+docker pull quay.io/mariesillo/jenkins:lts
 ```
 
-**Note:** If you're using Podman, just substitute commands from “docker” to “Podman”.
+**Note:** If you're using Podman, just substitute commands from “docker” to “podman”.
