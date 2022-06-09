@@ -21,7 +21,7 @@
 
 ### Education
 1. [3 hours: Docker Essentials (Badge)](https://yourlearning.ibm.com/activity/URL-7E83D36DDB5D)
-2. [1 hour: Kubernetes 101](https://yourlearning.ibm.com/activity/URL-0651426E4A0B)
+2. [1 hour: Kubernetes 101](https://yourlearning.ibm.com/activity/GM-KUBERNETES_101)
 3. [4 hours: Linux Fundamentals.](https://learning.oreilly.com/videos/linux-fundamentals/9780135560396) 
  - **For Linux Fundamentals course, we suggest taking only following lessons:**
    - Module 1. Essential Commands:
