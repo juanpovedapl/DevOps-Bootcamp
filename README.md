@@ -174,7 +174,7 @@ kubectl cluster-info
 1. Pull Jenkins custom image.
    
 ```
-docker pull quay.io/mariesillo/jenkins:lts
+docker pull quay.io/mariesillo/jenkins:ubi
 ```
 
 **Note:** If you're using Podman, just substitute commands from “docker” to “podman”.
