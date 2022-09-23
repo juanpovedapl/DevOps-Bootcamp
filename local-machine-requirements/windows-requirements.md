@@ -6,7 +6,6 @@
   - [Installing Docker and Docker Compose](#installing-docker-and-docker-compose)
   - [GitHub](#github)
   - [Installing IBM Cloud tools](#installing-ibm-cloud-tools)
-  - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
   - [Openshift CLI](#openshift-cli)
 
 
@@ -59,25 +58,6 @@ ibmcloud help
 After this installation, windows will request to restart your machine.
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
-
----
-
-## Add test environment to your hosts file
-
-1. Execute as administrator any text editor.
-2. Open the “hosts” file located at: C:\Windows\System32\drivers\etc\
-3. Add the following line at the end of the file:
-```
-9.220.50.15 api.crc.testing console-openshift-console.apps-crc.testing default-route-openshift-image-registry.apps-crc.testing oauth-openshift.apps-crc.testing
-```
-
-4. Save changes and verify you can ping one of the aliases as in the example below:
-```
-$ ping console-openshift-console.apps-crc.testing
-PING api.crc.testing (9.220.50.15): 56 data bytes
-64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
-...
-```
 
 ---
 
