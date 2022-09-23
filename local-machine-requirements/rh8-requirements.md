@@ -7,7 +7,6 @@
   - [Installing Podman and Podman-Compose](#installing-podman-and-podman-compose)
     - [By default **podman** is installed on RH 8.x, verify your installation:](#by-default-podman-is-installed-on-rh-8x-verify-your-installation)
   - [Installing IBM Cloud tools.](#installing-ibm-cloud-tools)
-  - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
   - [Openshift CLI](#openshift-cli)
   - [GitHub](#github)
 
@@ -69,27 +68,6 @@ ibmcloud help
 ```
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
-
----
-
-## Add test environment to your hosts file
-1. Open a terminal window and execute:
-```
-sudo vi /etc/hosts
-```
-
-Type your user session password, and add the following line at the end of the file:
-```
-9.220.50.15 api.crc.testing console-openshift-console.apps-crc.testing default-route-openshift-image-registry.apps-crc.testing oauth-openshift.apps-crc.testing
-```
-
-Verify you can ping one of the aliases as in the example below:
-```
-$ ping console-openshift-console.apps-crc.testing
-PING api.crc.testing (9.220.50.15): 56 data bytes
-64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
-...
-```
 
 ---
 
