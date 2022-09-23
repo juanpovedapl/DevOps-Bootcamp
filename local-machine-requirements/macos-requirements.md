@@ -6,7 +6,6 @@
   - [Installing Docker and Docker Compose](#installing-docker-and-docker-compose)
   - [Docker installation in Mac includes docker compose, kubernetes and other useful tools.](#docker-installation-in-mac-includes-docker-compose-kubernetes-and-other-useful-tools)
   - [Installing IBM Cloud tools.](#installing-ibm-cloud-tools)
-  - [Add test environment to your hosts file](#add-test-environment-to-your-hosts-file)
   - [Openshift CLI](#openshift-cli)
   - [GitHub](#github)
 
@@ -33,27 +32,6 @@ ibmcloud help
 ```
 
 More info [here](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
-
----
-
-## Add test environment to your hosts file
-1. Open a terminal window and execute:
-```
-sudo vi /etc/hosts
-```
-
-2. Type your Mac user password, and add the following line at the end of the file:
-```
-9.220.50.15 api.crc.testing console-openshift-console.apps-crc.testing default-route-openshift-image-registry.apps-crc.testing oauth-openshift.apps-crc.testing
-```
-
-3. Save changes and then verify you can ping one of the aliases as in the example below:
-```
-$ ping console-openshift-console.apps-crc.testing
-PING api.crc.testing (9.220.50.15): 56 data bytes
-64 bytes from 9.220.50.15: icmp_seq=0 ttl=53 time=101.662 ms
-...
-```
 
 ---
 
