@@ -34,7 +34,7 @@
 
 ---
 
-### Docker classroom
+### Docker classroom - In process to mirate to new platform.
 Once you are done with education, proceed with the following docker laboratories (which include essential practices for the bootcamp). When you're done with each, take an screenshot of the output and send it to DevOps-Bootcamp slack channel:
 - [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
 - [30 min: Docker Volumes](http://pwd.dst.ibm.com:4000/volumes/)
@@ -69,7 +69,7 @@ Test your knowledge with a pre-assessment we prepared for you!
 
 ### Keys and accounts creation
 
-#### Docker Hub Account
+#### Docker Hub Account - Not mandatory
 
 1. Create Docker Hub account. Go to: https://hub.docker.com/ 
    
