@@ -34,13 +34,13 @@
 
 ---
 
-### Docker classroom - In process to mirate to new platform.
+### Docker classroom - now in Killercoda ;)
 Once you are done with education, proceed with the following docker laboratories (which include essential practices for the bootcamp). When you're done with each, take an screenshot of the output and send it to DevOps-Bootcamp slack channel:
-- [30 min: Cowsay](http://pwd.dst.ibm.com:4000/cowsay/)
-- [30 min: Docker Volumes](http://pwd.dst.ibm.com:4000/volumes/)
-- [30 min: Docker Ports](http://pwd.dst.ibm.com:4000/ports/)
-- [30 min: Docker Compose](http://pwd.dst.ibm.com:4000/docker-compose/)
-- [30 min: Docker Swarm](http://pwd.dst.ibm.com:4000/swarm-visualizer/)
+- [30 min: Cowsay](https://killercoda.com/mariesillo/scenario/cowsay)
+- [30 min: Docker Volumes](https://killercoda.com/mariesillo/scenario/docker-volumes)
+- [30 min: Docker Ports](https://killercoda.com/mariesillo/scenario/docker-ports)
+- [30 min: Docker Compose](https://killercoda.com/mariesillo/scenario/docker-compose)
+- [30 min: Docker Swarm](https://killercoda.com/mariesillo/scenario/docker-swarm)
 
 ---
 
