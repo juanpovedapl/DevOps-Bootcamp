@@ -30,7 +30,7 @@
     - Lesson 4: Working with Text Files.
 4. [20 min: Git introduction](https://yourlearning.ibm.com/activity/URL-6AF7FBEE60B3)
 5. [7 min: What is OpenShift](https://yourlearning.ibm.com/activity/URL-DC67FDA4DA9C)
-6. [OpenShift Basics](https://yourlearning.ibm.com/activity/AB-BD09663480C4)
+6. [1 hour: OpenShift Basics](https://yourlearning.ibm.com/activity/AB-BD09663480C4)
 7. [5 hours: DevSecOps Essentials (Badge)](https://yourlearning.ibm.com/credential/CREDLY-fe4189f6-f5fa-48f1-8eb9-7bd4636dddce)
 
 ---
